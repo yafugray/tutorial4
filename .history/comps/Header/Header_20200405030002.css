@@ -1,0 +1,19 @@
+.header_line {
+    font-size: 12px;
+    color: rgb(48, 48, 48);
+    cursor: pointer;
+    padding: 1px 25px;
+    display: flex;
+    
+}
+
+/* .header_line:hover {
+    background-color: black;
+    display: inline-flex;
+    color: rgb(247, 144, 166);
+} */
+
+.header_line h1::selection {
+    background: none;
+    color:none;
+}
