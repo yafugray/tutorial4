@@ -9,7 +9,7 @@ export default {
     title: "Custom Button",
     component: CustomButton,
     component: Header
-};
+}
 
 export const MyCustomButton = () => <CustomButton/>;
 

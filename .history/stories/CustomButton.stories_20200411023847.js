@@ -3,37 +3,19 @@ import CustomButton from '../comps/CustomButton';
 import Header from '../comps/Header';
 import Input from  '../comps/Input';
 import Chat from  '../comps/Chat';
-import ChatPage from '../pages/ChatPage';
 
 export default {
     title: "Custom Button",
     component: CustomButton,
     component: Header
-};
+}
 
-export const MyCustomButton = () => <CustomButton/>;
-
-function CancelClick(){
-    alert("cancel");
-};
-
-export const MyCustomButtonWithOptions = () => <CustomButton 
-    color="#999"
-    text="Cancel"
-    onClick={CancelClick}
-/>;
-
+export const MyCustomButton = () => <CustomButton />; // also you need to change it e.g.
 export const MyHeader = () => <Header />;
-
 export const MyInput= () => <Input />;
-
-export const MyInputWithPlaceholder= () => <Input 
+export const MyInputwithPlaceholder= () => <Input 
         placeholder="Custom placeholder" />;
-
 export const MyChat = () => <Chat />;
-
-export const MyChatPage = () => <ChatPage />;
-
 
 //export const MyCustomButton = () => <Mybutton />; 
 

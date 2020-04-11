@@ -6,7 +6,9 @@ import React from 'react';
 import './Header.css';
 
 const Header = ({text, fontSize, color, onMouseOver}) =>
-<div>
+<div
+    onMouseOver={onMouseOver}
+    className="header_line">
     <h1 style={{fontSize:fontSize}}>{text}</h1>
 </div>
 

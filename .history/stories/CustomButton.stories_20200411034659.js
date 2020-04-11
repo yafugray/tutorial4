@@ -9,25 +9,25 @@ export default {
     title: "Custom Button",
     component: CustomButton,
     component: Header
-};
+}
 
 export const MyCustomButton = () => <CustomButton/>;
 
 function CancelClick(){
     alert("cancel");
-};
+}
 
-export const MyCustomButtonWithOptions = () => <CustomButton 
-    color="#999"
-    text="Cancel"
-    onClick={CancelClick}
+export const MyCustomButtonwithOption = () => <CustomButton
+color="#999"
+text="Cancel"
+onClick={CancelClick}
 />;
 
 export const MyHeader = () => <Header />;
 
 export const MyInput= () => <Input />;
 
-export const MyInputWithPlaceholder= () => <Input 
+export const MyInputwithPlaceholder= () => <Input 
         placeholder="Custom placeholder" />;
 
 export const MyChat = () => <Chat />;

@@ -5,11 +5,10 @@
 import React from 'react';
 import './Header.css';
 
-const Header = ({text, fontSize, color, onMouseOver}) =>
-<div>
+const Header = ({text, fontSize, onMouseOver}) =>
+
     <h1 style={{fontSize:fontSize}}>{text}</h1>
 </div>
-
 function MouseOver() {
     alert("mouse is over");
     

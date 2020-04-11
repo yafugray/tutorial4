@@ -9,15 +9,15 @@ export default {
     title: "Custom Button",
     component: CustomButton,
     component: Header
-};
+}
 
 export const MyCustomButton = () => <CustomButton/>;
 
 function CancelClick(){
     alert("cancel");
-};
+}
 
-export const MyCustomButtonWithOptions = () => <CustomButton 
+export const MyCustomButtonWithOption = () => <CustomButton 
     color="#999"
     text="Cancel"
     onClick={CancelClick}
