@@ -10,8 +10,7 @@ const Input = ({placeholder, onClick}) => {
             setVal(e.target.value);
         }} type='text' placeholder={placeholder} />
         <CustomButton onClick={()=>{
-            //alert(val);
-            onClick(val);
+            alert(val);
         }} text="send" color="#58F" />
     </div>;
 }

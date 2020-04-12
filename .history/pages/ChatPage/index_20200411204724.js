@@ -51,7 +51,7 @@ const ChatPage = ({}) => {
         <div id="custom_button" >
         <CustomButton 
             text={text}
-            color={color}
+            color={"#f7e600"}
             onClick={() => {
                 setColor("#DDF");
                 setText("Colour Changed");

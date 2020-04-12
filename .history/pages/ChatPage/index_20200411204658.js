@@ -20,7 +20,7 @@ const ChatPage = ({}) => {
     const [welcome, setWelcome] = useState("welcome to my App!");
     const [msg, setMsg] = useState("Pls type something!");
     const [resp, setResp] = useState("Let me respond to you"); 
-    const [color, setColor] = useState("#f7e600");
+    const [color, setColor] = useState("default_color");
     const [text, setText] = useState("Click This");
 
     return <div>
@@ -51,7 +51,7 @@ const ChatPage = ({}) => {
         <div id="custom_button" >
         <CustomButton 
             text={text}
-            color={color}
+            color={"#f7e600"}
             onClick={() => {
                 setColor("#DDF");
                 setText("Colour Changed");

@@ -20,60 +20,27 @@ const ChatPage = ({}) => {
     const [welcome, setWelcome] = useState("welcome to my App!");
     const [msg, setMsg] = useState("Pls type something!");
     const [resp, setResp] = useState("Let me respond to you"); 
-    const [color, setColor] = useState("#f7e600");
-    const [text, setText] = useState("Click This");
-
     return <div>
-
         <div id="welcome">
-            <Header fontSize={32} text={welcome} />
+            <Header fontsize={32} text="Welcome to my App!" />
         </div>
-
         <div id="chats" onClick={()=>{
             setWelcome("Start with seding a message."); //this is shorter type of function.
         }}>
             <Chat name={"User 1"} msg={msg}/> {/* This is me talking  */}
             <p />
-            <Chat img={"https://www.creativefabrica.com/wp-content/uploads/2019/05/Robot-icon-by-ahlangraphic-580x386.jpg"} name={"User 2"} backgroundColor={"#FAB"} msg={resp}/> {/* Response */}
+            <Chat img={"https://miro.medium.com/max/4000/1*m9IJdAYW04MYh75ivpwUNA.png"} name={"User 2"} backgroundColor={"#FAB"} msg={resp}/> {/* Response */}
         </div>
-
         <div id="controls">
             <Input onClick={(val)=>{
                 setMsg(val);
-                var new_resp = CheckResponse(val);
-                setResp(new_resp);
-                /*if(val === "hi") {
+                if(val === "hi") {
                     setResp("I love pie");
-                } */
+                }
             }}/>
         </div>
-
-        <div id="custom_button" >
-        <CustomButton 
-            text={text}
-            color={color}
-            onClick={() => {
-                setColor("#DDF");
-                setText("Colour Changed");
-        }}/>
-            When the button is clicked, setColor to another color, and
-            setText to another text.
-        </div>
-    </div>
+</div>
 }
-
-function CheckResponse(inp){
-    switch(inp.toLowerCase()) { //.toLowercase makes Capital letter also works.
-        case "hi":
-            return "I love pie";
-        case "how are you?":
-            return "Great";
-        default:
-            return "I don't understand what you are trying to say.";
-    }
-}
-
-
 ChatPage.defaultProps = {
 
 }

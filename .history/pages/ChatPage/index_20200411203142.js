@@ -20,15 +20,12 @@ const ChatPage = ({}) => {
     const [welcome, setWelcome] = useState("welcome to my App!");
     const [msg, setMsg] = useState("Pls type something!");
     const [resp, setResp] = useState("Let me respond to you"); 
-    const [color, setColor] = useState("#f7e600");
-    const [text, setText] = useState("Click This");
+    const [color, setColor] = useState("default_color");
 
     return <div>
-
         <div id="welcome">
             <Header fontSize={32} text={welcome} />
         </div>
-
         <div id="chats" onClick={()=>{
             setWelcome("Start with seding a message."); //this is shorter type of function.
         }}>
@@ -36,7 +33,6 @@ const ChatPage = ({}) => {
             <p />
             <Chat img={"https://www.creativefabrica.com/wp-content/uploads/2019/05/Robot-icon-by-ahlangraphic-580x386.jpg"} name={"User 2"} backgroundColor={"#FAB"} msg={resp}/> {/* Response */}
         </div>
-
         <div id="controls">
             <Input onClick={(val)=>{
                 setMsg(val);
@@ -47,15 +43,16 @@ const ChatPage = ({}) => {
                 } */
             }}/>
         </div>
-
-        <div id="custom_button" >
-        <CustomButton 
-            text={text}
-            color={color}
+        <div id="custom_button">
+            <CustomButton 
+            text={"Day Mode"}
+            color={"#f7e600"}
             onClick={() => {
                 setColor("#DDF");
-                setText("Colour Changed");
-        }}/>
+                setText("Changed");
+
+            }}
+            />
             When the button is clicked, setColor to another color, and
             setText to another text.
         </div>
@@ -73,6 +70,11 @@ function CheckResponse(inp){
     }
 }
 
+funtion ColourChange(chat) {
+    if(new_color = false){
+        Chat
+    }
+};
 
 ChatPage.defaultProps = {
 

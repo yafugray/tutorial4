@@ -20,11 +20,10 @@ const ChatPage = ({}) => {
     const [welcome, setWelcome] = useState("welcome to my App!");
     const [msg, setMsg] = useState("Pls type something!");
     const [resp, setResp] = useState("Let me respond to you"); 
-    const [color, setColor] = useState("#f7e600");
+    const [color, setColor] = useState("default_color");
     const [text, setText] = useState("Click This");
 
     return <div>
-
         <div id="welcome">
             <Header fontSize={32} text={welcome} />
         </div>
@@ -48,14 +47,15 @@ const ChatPage = ({}) => {
             }}/>
         </div>
 
-        <div id="custom_button" >
-        <CustomButton 
-            text={text}
-            color={color}
-            onClick={() => {
-                setColor("#DDF");
-                setText("Colour Changed");
-        }}/>
+        <div id="custom_button" onClick={()=>{
+            setColor("#DDF");
+            setText("Colour Changed");
+        }}>
+
+            <CustomButton 
+            text={"Click This"}
+            color={"#f7e600"}
+            />
             When the button is clicked, setColor to another color, and
             setText to another text.
         </div>
