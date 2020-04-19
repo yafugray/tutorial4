@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import Router from 'next/router';
-
+import './index.css';
 import {FaSearchMinus} from 'react-icons/fa';
+import {GiLightningTree} from 'react-icons/Gi';
 
 
 function ClickIndex() {
@@ -14,7 +15,9 @@ function ClickIndex() {
 const Index = () => <div id="mainapp">
     <div onClick={ClickIndex}>Index</div>
     <FaSearchMinus/>
-    <Link href="/ChatPage"><button>Chat!</button></Link>
+    
+    
+    <Link href="/ChatPage"><button><GiLightningTree color="#BBC" /> Chat!</button></Link>
     <Link href="/Contact"><button>Contact Us!</button></Link>
  {/* why link? we are still using the same js file, a makes different. That's why we use link not 'a' */}
 </div>

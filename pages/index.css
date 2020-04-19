@@ -1,0 +1,12 @@
+#mainapp {
+    position:relative;
+    right:0;
+    opacity:1s;
+    transition: opacity 1s, right 1s;
+    
+}
+
+body, html {
+
+    overflow-x: hidden; /* This is for horizontal scrolling */
+}

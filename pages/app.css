@@ -2,9 +2,3 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-#mainapp {
-    position:relative;
-    right:0;
-    opacity:1s;
-    transition: opacity 1s, right 1s;
-}
