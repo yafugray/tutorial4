@@ -24,7 +24,7 @@ const ChatPage = ({}) => {
     const [text, setText] = useState("Click This");
 
     return <div>
-
+ 
         <div id="welcome">
             <Header fontSize={32} text={welcome} />
         </div>
