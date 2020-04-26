@@ -4,6 +4,7 @@ import Header from '../comps/Header';
 import Input from  '../comps/Input';
 import Chat from  '../comps/Chat';
 import ChatPage from '../pages/ChatPage';
+import ButtonPage from '../pages/ButtonPage';
 
 export default {
     title: "Custom Button",
@@ -34,6 +35,7 @@ export const MyChat = () => <Chat />;
 
 export const MyChatPage = () => <ChatPage />;
 
+export const MyButtonPage = () => <ButtonPage />;
 
 //export const MyCustomButton = () => <Mybutton />; 
 
