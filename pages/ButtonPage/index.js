@@ -2,6 +2,9 @@ import React, {useState, useEffect} from 'react';
 import './buttonpage.css';
 import Chat from '../../comps/Chat';
 import CustomButton from '../../comps/CustomButton';
+import Header from '../../comps/Header';
+import Input from '../../comps/Input';
+
 /*
 var welcome_state = "welcome to my App!"
 function setWelcome () {

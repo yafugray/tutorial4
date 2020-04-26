@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Router from 'next/router';
 import './index.css';
 import {FaSearchMinus} from 'react-icons/fa';
-import {GiLightningTree} from 'react-icons/Gi';
+import {GiLightningTree} from 'react-icons/gi';
 
 
 function ClickIndex() {
@@ -22,5 +22,4 @@ const Index = () => <div id="mainapp">
  {/* why link? we are still using the same js file, a makes different. That's why we use link not 'a' */}
 </div>
 
-
-export default Index
+export default Index;
